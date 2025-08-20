@@ -76,7 +76,9 @@ body {
 
 }
 .aboutme{
+  margin: 0 auto;
   min-width: 30vw;
+/* background: #000; */
 }
 .about{
   display: flex;
@@ -93,15 +95,21 @@ body {
   flex: 1 1 300px; /* 최소 300px, 여유 있으면 늘어남 */
   max-width: 600px;
 }
-
-
+.jeong{
+  font-size: 60px;
+  /* color: #f34ebe; */
+}
+.min{
+  font-size: 60px;
+  /* color: #f34ebe; */
+}
 .con1>img{
   width: 20%;
   height: auto;
   position: absolute;
   display: block;
-  top: 55%;
-  left: 30%;
+  top: 60%;
+  left: 35%;
   /* transform: translate(-50%,-50%); */
 }
 
@@ -128,7 +136,7 @@ transform: translate(-50%,-50%) rotate(12deg);
 
 .textBox{
   padding-top: 10px;
-  margin-left: -100px;
+  /* margin-left: -50px; */
   text-align: left;
   /* background:white; */
 
@@ -154,10 +162,10 @@ transform: translate(-50%,-50%) rotate(12deg);
 
 
 
-.textBox h1{ 
+.textBox h1{
+  line-height: 100px; 
   font-size: 50px;
-  margin-bottom: 50px;
-
+  margin-bottom: 40px;
 }
 
 
@@ -195,7 +203,7 @@ transform: translate(-50%,-50%) rotate(12deg);
 }
 .section3 .skill-wrap span{ width: 15%; }
 .section3 .skill-wrap span h1{width: 100%;}
-#c1,#c3,#c4,#c5,#c6{
+#c1,#c2,#c3,#c4,#c5,#c6{
   /* padding: 20px; */
   margin-top: 200px;
   width: 200px;
@@ -211,19 +219,6 @@ transform: translate(-50%,-50%) rotate(12deg);
   transform: translateY(-100px);
 }
 
-#c2,#c7,#c8,#c3{
-  margin-top: 200px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  vertical-align: center;
-  line-height: 240px;
-  font-size: 14px;
-  font-weight: bold;
-  /* opacity: 0; */
-  transform: translateY(-100px);
-}
 
 /* 위치 지정 (Figma 시안 참고해서 대략 위치 잡기) */
 #c1 { top: 100px; left: 50px; background: black; }
