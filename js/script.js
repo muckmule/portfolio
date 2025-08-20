@@ -106,13 +106,13 @@ document.querySelectorAll(".text-fill").forEach(el => {
       trigger:'.box',
       start:'top top',
       end: '100% 20%',
-      scrub:1,
+      scrub:2,
       // markers:true
     }
   })
-    .to('.skill-wrap #c1',{x:'0', y:'600', rotate:'40', ease:'none', duration:7},0)
+    .to('.skill-wrap #c1',{x:'0', y:'900', rotate:'40', ease:'none', duration:7},0)
     .to('.skill-wrap #c2',{x:'20', y:'700', rotate:'-20', ease:'none', duration:6},0.2)
-    .to('.skill-wrap #c3',{x:'30', y:'600', rotate:'-40', ease:'none', duration:7},0)
+    .to('.skill-wrap #c3',{x:'30', y:'700', rotate:'-40', ease:'none', duration:7},0)
     .to('.skill-wrap #c4',{x:'40', y:'800', rotate:'50', ease:'none', duration:6},1)
     .to('.skill-wrap #c5',{x:'20', y:'600', rotate:'-20', ease:'none', duration:6},0.5)
     .to('.skill-wrap #c6',{x:'50', y:'800', rotate:'-10', ease:'none', duration:7},0)
