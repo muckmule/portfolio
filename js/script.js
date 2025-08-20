@@ -73,7 +73,7 @@ ScrollTrigger.create({
             start: 'top 100%',
             end: 'bottom 50%',
             scrub:10, //부드럽게 되감기기
-            markers: true
+            // markers: true
           
         }
   })
