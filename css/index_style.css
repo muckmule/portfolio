@@ -63,35 +63,22 @@ body {
 
 /* about me */
 .section2{
-  /* position 제거 */
   width: 100dvw;
   margin: 0 auto;
-  /* padding: 100px 20px; */
   text-align: center;
   box-sizing: border-box;
   height: 100dvh; /* 고정된 100vh 제거 */
-  /* background: #000; */
   padding-bottom: 250px;
-  /* background: green; */
 
 }
 .section2_wrap{
-  /* padding: 5vw 5vh; */
-   /* background: white; */
   margin: 0 auto;
 
 }
 .aboutme{
   min-width: 30vw;
-  /* background: #000; */
 }
 .about{
-  /* min-width: 500px; */
-  /* width: 900px;
-  padding-top: 50px;
-  margin: 0 auto;
-  display: flex; */
-   /* background: red; */
   display: flex;
   flex-wrap: wrap; /* 줄바꿈 허용 */
   justify-content: center;
@@ -111,8 +98,6 @@ body {
 .con1>img{
   width: 20%;
   height: auto;
-  /* background: #000; */
-  /* min-width: 300px; */
   position: absolute;
   display: block;
   top: 55%;
@@ -182,7 +167,7 @@ transform: translate(-50%,-50%) rotate(12deg);
   
 }
 .section3 {
-  /* margin: 0 auto; /* 자연스럽게 띄우기 */
+
   height: 2100px;
   box-sizing: border-box;
   /* background: red; */
@@ -196,7 +181,6 @@ transform: translate(-50%,-50%) rotate(12deg);
   padding: 0 50px;
   box-sizing: border-box;
   padding-top: 100px;
-  /* background: yellow; */
   margin: 0 auto;
 }
 
@@ -229,9 +213,6 @@ transform: translate(-50%,-50%) rotate(12deg);
 
 #c2,#c7,#c8,#c3{
   margin-top: 200px;
-  /* padding: 20px;
-  width: 240px;
-  height: 240px; */
   border-radius: 50%;
   background-color: white;
   color: black;
@@ -262,7 +243,6 @@ transform: translate(-50%,-50%) rotate(12deg);
   backdrop-filter: blur(100px);
   border-radius: 15px;
   box-shadow: 3px 3px 50px 13px rgb(163, 163, 163, 0.3);
-  /* box-shadow: 3px 3px 50px 13px rgb(254, 125, 214, 0.3); */
 }
 .myskill{
 }
