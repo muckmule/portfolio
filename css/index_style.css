@@ -44,16 +44,23 @@ body {
 }
 .section1{
   height: 100dvh;
-  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 */
+  align-items: center;     /* 가로 중앙 */
+  position: relative;
   text-align: center;
-  margin-bottom: 50px;
 }
 .section1 .text_main{
   /* padding: 50px; */
   vertical-align: middle;
   
 }
-
+.section1 .aniBox {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
 .aniBox>img{ 
   opacity: 0;
   position: absolute; 
@@ -80,21 +87,6 @@ body {
   min-width: 30vw;
 /* background: #000; */
 }
-.about{
-  display: flex;
-  flex-wrap: wrap; /* 줄바꿈 허용 */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  padding-top: 50px;
-  width: 100%;
-  box-sizing: border-box;
-  /* background: #000; */
-}
-.con1, .con2 {
-  flex: 1 1 300px; /* 최소 300px, 여유 있으면 늘어남 */
-  max-width: 600px;
-}
 .jeong{
   font-size: 60px;
   /* color: #f34ebe; */
@@ -103,34 +95,66 @@ body {
   font-size: 60px;
   /* color: #f34ebe; */
 }
-.con1>img{
-  width: 20%;
-  height: auto;
-  position: absolute;
-  display: block;
-  top: 60%;
-  left: 35%;
-  /* transform: translate(-50%,-50%); */
+.about{
+  display: flex;
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 30px; */
+  padding-top: 50px;
+  width: 80%;
+  box-sizing: border-box;
+  /* background: green; */
+  margin: 0 auto;
 }
 
-.profill_1{
-transform: translate(-50%,-50%) rotate(10deg);
+
+.con1{
+  position: relative; 
+  width: 80%; /* 부모 영역 비율 */
+  max-width: 500px;
+  max-height: auto; 
+
+  /* background: red; */
+}
+
+.con1 img{
+  margin: 0 auto;
+  max-width: 300px;
+  width: 60%;
+  height: auto;
+  position: absolute;
+  /* display: block; */
+  /* top: 60%;
+  left: 65%; */
+  transition: all 0.3s ease;
+  /* transform: translate(-50%,-50%); */
+  /* background: yellow; */
+}
+
+.profill_1{transform: translate(-50%,-50%) rotate(10deg); 
+z-index: 1;
 }
 .profill_2{ 
 transform: translate(-50%,-50%) rotate(-12deg);
+z-index: 2;
 }
 .profill_3{ 
 transform: translate(-50%,-50%) rotate(5deg);
+z-index: 3;
 }
 .profill_4{ 
 transform: translate(-50%,-50%) rotate(12deg);
+z-index: 4;
 }
 
 
-
-
-.con2{
-
+.con2 {
+  flex: 1 1 300px; 
+  max-width: 600px;
+  /* background: #000; */
+  /* margin: 0 auto; */
+  /* background: #000; */
 }
 
 
@@ -609,4 +633,162 @@ footer{
 .icon{
   margin-right: 20px;
   width: 10%;
+}
+
+/* ============================= */
+/* 📱 Mobile Responsive (max 768px) */
+/* ============================= */
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    min-width: 100%;
+  }
+
+  /* section1 */
+  .section1 {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .section1 .text_main {
+    width: 80%;
+    max-width: 350px;
+    margin-top: 40px;
+  }
+  .aniBox img {
+    width: 60%;
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* section2 */
+  .section2 {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .aboutme {
+    width: 70%;
+    min-width: auto;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .con1 > img {
+    position: static;
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    transform: none;
+  }
+  .textBox {
+    padding: 0;
+    text-align: center;
+  }
+  .textBox h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .textBox p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* section3 */
+  .section3 {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .skill-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    transform: none !important;
+    padding-top: 40px;
+  }
+  .skill-wrap span {
+    width: 120px !important;
+    height: 120px !important;
+    font-size: 12px;
+    line-height: 120px;
+    margin: 10px;
+  }
+  .inner .box {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .box2 {
+    padding-left: 0;
+  }
+  .line,
+  .address {
+    display: none;
+  }
+
+  /* section4 - 프로젝트 */
+  .section4 {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .project > img {
+    width: 70%;
+    max-width: 300px;
+  }
+  .project_list {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .card {
+    flex: none;
+    width: 100%;
+    min-height: 250px;
+  }
+  .card-content.front,
+  .card-content.back {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  /* footer */
+  .footer {
+    height: auto;
+    padding: 60px 20px;
+  }
+  .circle {
+    width: 1000px;
+    height: 1000px;
+    top: 30%;
+  }
+  .email {
+    position: static;
+    transform: none;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .email h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .icon {
+    width: 16px;
+    margin-right: 8px;
+  }
+  .f_1 img {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+  }
 }
