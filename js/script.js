@@ -45,6 +45,12 @@ window.onload = function() {
 		anticipatePin: 3,
 
 	});
+	gsap.to(".aboutme", {
+			y: 10, // 위로 20px 이동
+			duration: 1.5, // 2초 동안
+			yoyo: true, // 다시 돌아오게
+			repeat: -1, // 무한 반복
+			ease: "power1.inOut"})
 
 
 	// section2 전체 pin
@@ -61,11 +67,12 @@ const tl = gsap.timeline({
 });
 
 // 순차 애니메이션
-tl.fromTo('.con1 .profill_1', { y: '300%' }, { y: '0' })
+tl.fromTo('.textBox', { y: '300%' }, { y: '0' }, "<0.5")
+	.fromTo('.con1 .profill_1', { y: '300%' }, { y: '0' })
   .fromTo('.con1 .profill_2', { y: '300%' }, { y: '0' }, "<0.3")
   .fromTo('.con1 .profill_3', { y: '300%' }, { y: '0' }, "<0.3")
   .fromTo('.con1 .profill_4', { y: '300%' }, { y: '0' }, "<0.3")
-  .to({}, { duration: 2 });
+  .to({}, { duration: 3 });
 
 
 
@@ -141,6 +148,13 @@ tl.fromTo('.con1 .profill_1', { y: '300%' }, { y: '0' })
 				ease: 'none',
 				duration: 7
 			}, 0)
+			gsap.to(".project", {
+			y: -10, // 위로 20px 이동
+			duration: 1.5, // 2초 동안
+			yoyo: true, // 다시 돌아오게
+			repeat: -1, // 무한 반복
+			ease: "power1.inOut"
+		});
 
 
 		//circle
