@@ -387,10 +387,10 @@ body:before {
 }
 
 .card {
-  flex: 1.5;
   height: 100%;
-  border: #333 2px solid;
+  flex: 1.5;
   border-radius: 25px;
+  border: #333 2px solid;
   overflow: hidden;
   position: relative;
   transition: flex 0.6s ease;
@@ -399,7 +399,6 @@ body:before {
   align-items: center;
   justify-content: center;
   box-shadow: -15px -15px 30px rgba(0,0,0,0.25);
-  
 }
 
 .card-content.front {
