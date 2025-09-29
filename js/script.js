@@ -66,20 +66,7 @@ const tl = gsap.timeline({
   }
 });
 
-// 순차 애니메이션
-tl.fromTo('.textBox', { y: '300%' }, { y: '0' }, "<0.5")
-	.fromTo('.con1 .profill_1', { y: '300%' }, { y: '0' })
-  .fromTo('.con1 .profill_2', { y: '300%' }, { y: '0' }, "<0.3")
-  .fromTo('.con1 .profill_3', { y: '300%' }, { y: '0' }, "<0.3")
-  .fromTo('.con1 .profill_4', { y: '300%' }, { y: '0' }, "<0.3")
-  .to({}, { duration: 3 });
-
-
-
-
-
-
-	document.querySelectorAll(".text-fill").forEach(el => {
+document.querySelectorAll(".text-fill").forEach(el => {
 		gsap.to(el, {
 			"--fill-width": "100%",
 			scrollTrigger: {
@@ -92,6 +79,13 @@ tl.fromTo('.textBox', { y: '300%' }, { y: '0' }, "<0.5")
 		});
 	});
 
+// 순차 애니메이션
+tl.fromTo('.textBox', { y: '300%' }, { y: '0' }, "<0.5")
+	.fromTo('.con1 .profill_1', { y: '300%' }, { y: '0' })
+  .fromTo('.con1 .profill_2', { y: '300%' }, { y: '0' }, "<0.3")
+  .fromTo('.con1 .profill_3', { y: '300%' }, { y: '0' }, "<0.3")
+  .fromTo('.con1 .profill_4', { y: '300%' }, { y: '0' }, "<0.3")
+  .to({}, { duration: 3 });
 
 	let mm = gsap.matchMedia();
 

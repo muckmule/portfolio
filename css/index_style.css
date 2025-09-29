@@ -778,6 +778,14 @@ button:hover{
   }
 }
 @media screen and (max-width: 1024px) {
+  .aboutme {
+    width: unset;
+    height: 140px;
+    margin-bottom: 30px;
+  }
+  .con1{
+    margin-left:0px ;
+  }
  .project>img{
     width: 40vw;
   }
@@ -918,7 +926,8 @@ button:hover{
   #c5,
   #c6 {
     width: 100px;
-    height: 100px;
+    height: 130px;
+    line-height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -965,7 +974,8 @@ button:hover{
 
   .aboutme {
     width: unset;
-    height: 64px;
+    height: 100px;
+    margin-bottom: 30px;
   }
 
   .about {
