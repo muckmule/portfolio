@@ -95,7 +95,11 @@ body:before {
 }
 
 .aboutme {
+  padding-top: 40px;
   margin: 0 auto;
+}
+.textBox{
+  margin-top: -40px;
 }
 
 .jeong {
@@ -122,6 +126,8 @@ body:before {
   width: 80%;
   max-width: 500px;
   max-height: auto;
+  margin-top: 10px;
+  margin-left: 80px;
 }
 
 .con1 img {
