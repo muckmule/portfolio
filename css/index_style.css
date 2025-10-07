@@ -76,6 +76,10 @@ body:before {
   transform: translate(-50%, -100%);
   max-width: 95%;
 }
+.spin{
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
 
 .section2 {
   width: 100%;
